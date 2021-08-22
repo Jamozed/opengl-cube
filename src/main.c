@@ -8,6 +8,7 @@
 
 int main(int ac, char *av[]) {
 	InitWindow(640, 480, "OpenGL-Cube");
+	SetWindowState(FLAG_WINDOW_RESIZABLE);
 	// SetTargetFPS(240);
 	
 	Camera3D camera = { 0 };
