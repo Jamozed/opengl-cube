@@ -2,8 +2,8 @@
 dir="$(dirname $(realpath "$0"))"
 
 cmake -S "${dir}" -B "${dir}/build" \
-	-DCMAKE_BUILD_TYPE:STRING=Release \
 	-DCMAKE_EXPORT_COMPILE_COMMANDS=1
+#	-DCMAKE_BUILD_TYPE:STRING=Release \
 
 cmake --build "${dir}/build"
 
